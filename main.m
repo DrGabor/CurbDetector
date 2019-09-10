@@ -1,6 +1,6 @@
 clc; close all; clear all;
 addpath('D:\MatlabPros\CommonFunctions\Velodyne');
-DataFolder = 'D:\MatlabPros\Curb4Journal\CurbDetector_GitHub\data'; 
+DataFolder = fullfile( pwd, 'data'); 
 List = dir( fullfile(DataFolder, '*.txt') ); 
 TMethod = {'Zhang', 'Hata', 'Chen'};
 %%%%%% the vertical angle of HDL-64E. 
